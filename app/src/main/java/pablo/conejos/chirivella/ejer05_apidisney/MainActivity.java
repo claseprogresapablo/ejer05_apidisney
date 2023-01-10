@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 if(!recyclerView.canScrollVertically(1)){
                     if(respuesta!= null){
                         String page = respuesta.getNextPage().split("=")[1];
-                        if (page!= null && page.isEmpty()){
+                        if (page!= null && !page.isEmpty()){
                             cargarSiguientePagina(page);
                         }
                     }
